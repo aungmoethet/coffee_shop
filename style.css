@@ -65,6 +65,7 @@ nav ul  li:first-child{
     border-radius: 20px;
     border: 1px solid rgba(255,255,255,0.18);
     box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+    text-align: center;
 
 }
 .home-text h3{
@@ -90,12 +91,24 @@ nav ul  li:first-child{
     font-size: 15px;
     border-radius: 5px;
     margin-right: 7px;
+    transition: all 900ms;
 }
 .home-text a:last-child{
     background-color: transparent;
     border: 2px solid #713045;
     color: #713045;
 }
+.home-text a:hover{
+    background-color: transparent;
+    border: solid 2px #713045;
+    color: #713045;
+}
+.home-text a:last-child:hover{
+    background-color: #713045;
+    border: solid 2px #713045;
+    color: #ffffff;
+}
+
 .about{
     width: 100%;
     height: 700px;
@@ -146,8 +159,14 @@ nav ul  li:first-child{
     color: #fff;
     padding: 10px 20px;
     border-radius: 10px;
+    transition: all 500ms ease-in-out;
     
    
+}
+.about-content a:hover{
+    background-color: #fff;
+    border: solid 2px #713045;
+    color: #713045;
 }
 
 /* Menu */
@@ -160,6 +179,7 @@ nav ul  li:first-child{
     padding: 20px;
     background-color: #e7e5e5;
     column-gap: 35px;
+    
 
 }
 .child-card{
@@ -169,7 +189,13 @@ nav ul  li:first-child{
     border-radius: 10px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;  
+    cursor: pointer;
+    transition:  .5s;
+   
 
+}
+.child-card:hover{
+    transform: translateY(-20px);
 }
 .child-card img{
     width: 100%;
@@ -195,8 +221,14 @@ nav ul  li:first-child{
     border: none;
     padding: 5px 10px;
     border-radius: 10px;
-}
+    cursor: pointer;
+    transition: all 300ms step-end;
 
+}
+.card-control button:hover{
+    background-color: #fff;
+    border: solid 2px #713045;
+    color: #713045;}
 .contact{
     width: 100%;
     height: 400px;
@@ -240,6 +272,23 @@ nav ul  li:first-child{
     margin-bottom: 5px;
     color: #d6d0d0;
 }
+.social i{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+.social i:nth-child(1){
+    color: #3d5af1;
+}
+.social i:nth-child(2){
+    color: #22d1ee;
+}
+.social i:nth-child(3){
+    color: #ff304f;
+}
+
 .contact-content textarea{
     width: 200px;
     height: 70px;
@@ -249,11 +298,24 @@ nav ul  li:first-child{
 }
 .contact-content button{
 
-    background-color: #d4255c;
+    background-color:#713045;
     color: #fff;
     padding: 10px 40px;
     border-radius: 10px;
-    
-   
+    border: none;
+    cursor: pointer;
+    transition: .4s;
 }
-
+.contact-content button:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    
+}
+.contact table{
+    margin-bottom: 5px;
+}
+.contact table tr td{
+    padding: 2px 15px 2px 0;
+    color: #fff;
+}
